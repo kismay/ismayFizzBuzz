@@ -22,16 +22,16 @@ If x doesn't satisfy any of the above conditions, simply return x.
 \examples{
 
 # divisible by 3, output "Fizz"
-fizz_buzz(21)
+fizz_buzz(21L)
 
 # divisible by 5, output "Buzz"
-fizz_buzz(35)
+fizz_buzz(35L)
 
 # divisible by 3 and 5, output "FizzBuzz"
-fizz_buzz(60)
+fizz_buzz(60L)
 
 # divisible neither 3 nor 5, output 41
-fizz_buzz(41)
+fizz_buzz(41L)
 
 
 }

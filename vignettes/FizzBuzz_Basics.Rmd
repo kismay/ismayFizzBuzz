@@ -1,0 +1,45 @@
+---
+title: "FizzBuzz Basics"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FizzBuzz Basics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ismayFizzBuzz)
+```
+
+Here are some examples of the `fizz_buzz()` function working correctly:
+
+```{r}
+fizz_buzz(18L)
+fizz_buzz(20L)
+fizz_buzz(120)
+fizz_buzz(17)
+```
+
+Here are some errors if the argument in `fizz_buzz()` is not appropriate:
+
+```{r, error=TRUE}
+fizz_buzz(iris)
+fizz_buzz(c(1, 12))
+```
+
+Here are some messages if the argument is not a positive integer. The argument
+is still returned:
+```{r}
+fizz_buzz("pear")
+fizz_buzz(4.45)
+fizz_buzz(-3)
+fizz_buzz(0)
+```
+

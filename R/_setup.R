@@ -6,6 +6,7 @@ use_readme_rmd()
 use_news_md()
 use_test("fizz_buzz")
 
+# get ssh key from github
 
 use_git_config(
   scope = "user",
@@ -14,9 +15,10 @@ use_git_config(
 )
 
 use_git()
+use_github(protocol = "ssh")
 use_tidy_github()
 
-use_github(protocol = "ssh")
+
 
 devtools::document()
 use_pipe()

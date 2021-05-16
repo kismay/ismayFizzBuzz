@@ -6,7 +6,9 @@ use_readme_rmd()
 use_news_md()
 use_test("fizz_buzz")
 
-# get ssh key from github
+create_github_token()
+
+# get PAT token from github
 
 use_git_config(
   scope = "user",
@@ -15,7 +17,7 @@ use_git_config(
 )
 
 use_git()
-use_github(protocol = "ssh")
+use_github(protocol = "https")
 use_tidy_github()
 
 
